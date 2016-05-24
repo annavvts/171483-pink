@@ -1,7 +1,7 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Смирнова](https://up.htmlacademy.ru/adaptive/7/user/171483).
-* Наставник: `Неизвестно`.
+* Наставник: Никита Рогатнев.
 
 ---
 
