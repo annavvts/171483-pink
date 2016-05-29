@@ -5,23 +5,23 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <nav class="main-nav  main-nav--closed">
-      <button class="main-nav__button--close"></button>
+    <header class="page-header">
+      <nav class="main-nav  main-nav--closed">
+      <a class="main-nav__btn--close"></a>
       <ul class="main-nav__items">
         <li class="main-nav__item"><a>Главная</a></li>
-        <li class="main-nav__item"><a href="#">Фотографии</a></li>
-        <li class="main-nav__item"><a href="#">Конкурс</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
       </ul>
     </nav>
-    <header class="page-header">
       <div class="page-header__logo">
         <img src="img/logo.svg" alt="Pink">
       </div>
-      <button class="main-nav__button--open"></button>
+      <a class="main-nav__btn--open"></a>
     </header>
     <section class="download">
-      <h2 class="download__title">Скачать приложение</h2>
+      <a class="download__title" href="#">Скачать приложение</a>
       <div class="download__icons">
         <img src="img/apple-icon.svg" alt="Apple">
         <img src="img/android-icon.svg" alt="Android">
@@ -30,20 +30,20 @@
       <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="app-intro">
-      <p class="app-intro__text">Устали от серости мегаполиса?</p>
-      <p class="app-intro__text">Нам есть, что вам предложить!</p>
+      <h2 class="app-intro__text">Устали от серости мегаполиса?</h2>
+      <h2 class="app-intro__text">Нам есть, что вам предложить!</h2>
     </section>
     <section class="app-advantages">
       <div class="app__reasons">
-        <h4 class="app-reasons__title">Поднимает настроение</h4>
+        <h3 class="app-reasons__title">Поднимает настроение</h3>
         <p class="app-reasons__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
       </div>
       <div class="app__reasons">
-        <h4 class="app-reasons__title">Меняет мир вокруг</h4>
+        <h3 class="app-reasons__title">Меняет мир вокруг</h3>
         <p class="app-reasons__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
       </div>
       <div class="app__reasons">
-        <h4 class="app-reasons__title">Заводит новых друзей</h4>
+        <h3 class="app-reasons__title">Заводит новых друзей</h3>
         <p class="app-reasons__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
       <img src="img/hello-screen.svg" alt="Всем привет!">
@@ -59,10 +59,10 @@
         <input class="slider__input" type="radio" name="purchase" id="purchase-input-1" checked>
         <input class="slider__input" type="radio" name="purchase" id="purchase-input-2">
         <input class="slider__input" type="radio" name="purchase" id="purchase-input-3">
-      <header class="purchase__header">
-        <h3 class="purchase__title">Стандарт</h2>
-        <p class="purchase__price">3,99 USD</p>
-      </header>
+      <div class="purchase__header">
+        <h4 class="purchase__title">Стандарт</h4>
+        <span class="purchase__price">3,99 USD</span>
+      </div>
       <div class="purchase__wrapper">
         <ul class="purchase__items">
           <li class="purchase__item">Розовый фильтр<span class="purchase__check"></span></li>
@@ -73,13 +73,13 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__title">Звоните:</p>
-        <p class="contacts__info">+7 (812) 555-66-66</p>
-        <p class="contacts__title">Пишите:</p>
-        <p class="contacts__info">mail@htmlacademy.ru</p>
-        <p class="contacts__title">Приезжайте в гости:</p>
-        <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+        <h2 class="contacts__text">Остались вопросы? Свяжитесь с нами!</h2>
+        <h3 class="contacts__title" href="#">Звоните:</h3>
+        <a class="contacts__info">+7 (812) 555-66-66</a>
+        <h3 class="contacts__title">Пишите:</h3>
+        <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
+        <h3 class="contacts__title">Приезжайте в гости:</h3>
+        <a class="contacts__info" href="#">ул. Большая Конюшенная, 19/8</a>
       </div>
       <div class="contacts__map">
         <img src="img/map.svg" alt="Карта">
