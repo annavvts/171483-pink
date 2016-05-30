@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк. Конкурс</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav  main-nav--closed">
+        <a class="main-nav__btn--close"></a>
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+      </nav>
+      <div class="page-header__logo">
+        <a href="index.html"><img src="img/logo.svg" alt="Pink"></a>
+      </div>
+      <a class="main-nav__btn--open"></a>
+    </header>
+    <div class="contest-intro">
+      <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+    </div>
+    <div class="form__wrapper">
+      <section class="contest-descr">
+        <p class="contest-contacts__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+      </section>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <section class="contest-contacts">
+          <label class="contest-contacts__personal-label" for="last-name">Фамилия:</label>
+          <input class="contest-contacts__personal-input" type="text" name="personal-info" id="last-name" placeholder="Укажите фамилию">
+          <label class="contest-contacts__personal-label" for="first-name">Имя:</label>
+          <input class="contest-contacts__personal-input" type="text" name="personal-info" id="first-name" placeholder="Введите ваше имя">
+          <label class="contest-contacts__personal-label" for="patronymic-name">Отчество:</label>
+          <input class="contest-contacts__personal-input" type="text" name="personal-info" id="patronymic-name" placeholder="Ну и отчество тоже">
+        </section>
+        <section class="contest-achievments">
+          <h2 class="contest-achievments__text">Ваши безбашенные достижения в путешествии</h2> 
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="selfie" checked>
+          <label class="contest-achievments__select-label" for="selfie">Сделал селфи с акулой</label>
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="sunburn" checked>
+          <label class="contest-achievments__select-label" for="sunburn">Обгорел на пляже</label>
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="chuck-norris">
+          <label class="contest-achievments__select-label" for="chuck-norris">Видел Чака Норриса</label>
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="souvenirs">
+          <label class="contest-achievments__select-label" for="souvenirs">Накупил сувениров</label>
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="tower" checked>
+          <label class="contest-achievments__select-label" for="tower">Удержал башню</label>
+          <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="crush-hotel">
+          <label class="contest-achievments__select-label" for="crush-hotel">Разгромил отель</label>
+        </section>
+        <section class="contest-connect">
+          <label class="contest-connect__personal-label" for="phone">Номерок телефончика</label>
+          <input class="contest-connect__personal-input" type="text" name="personal-connect" id="phone" placeholder="Номер, пожалуйста">
+          <label class="contest-connect__personal-label" for="email">Адресок почты</label>
+          <input class="contest-connect__personal-input" type="text" name="personal-connect" id="email" placeholder="E-mail, пожалуйста">
+        </section>
+        <section class="contest-app">
+          <h2 class="contest-app__text">С каким приложением путешествовали?</h2>
+          <input class="contest-app__select-input" type="radio" name="app-name" id="ios-app" checked>
+          <label class="contest-app__select-label" for="ios-app">Pink для iOS</label>
+          <input class="contest-app__select-input" type="radio" name="app-name" id="android-app">
+          <label class="contest-app__select-label" for="android-app">Pink на Android</label>
+          <input class="contest-app__select-input" type="radio" name="app-name" id="windows-app">
+          <label class="contest-app__select-label" for="windows-app">Windows Phone</label>
+        </section>
+        <section class="contest-feedback">
+          <h2 class="contest-feedback__text">Опишите свои эмоции</h2>
+          <textarea rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </section>
+        <input type="submit" value="Отправить форму">
+      </form>
+      <p class="form__text"><span class="form__symbol">*</span> — обязательные поля</p>
+    </div>
+    <footer>
+      <div class="footer__logo">
+        <a href="#"><img src="img/logo.svg" alt="Pink"></a>
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-button  footer__social-button--twitter" href="#">Twitter</a>
+        <a class="footer__social-button  footer__social-button--fb" href="#">Facebook</a>
+        <a class="footer__social-button  footer__social-button--youtube" href="#">Youtube</a>
+      </div>
+      <div class="footer__copyright">
+        <p>Разработано <a href="https://htmlacademy.ru/">HTML-Academy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
