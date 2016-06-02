@@ -2,32 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <title>HTML Academy: Пинк. Конкурс</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav  main-nav--closed">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
         <a class="main-nav__btn--close"></a>
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a>Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
       </nav>
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo.svg" alt="Pink"></a>
+        <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
       </div>
       <a class="main-nav__btn--open"></a>
     </header>
     <div class="contest-intro">
-      <h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     <div class="form__wrapper">
       <section class="contest-descr">
-        <p class="contest-contacts__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
+        <p class="contest-descr__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</p>
       </section>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="form-area" action="https://echo.htmlacademy.ru" method="post">
         <section class="contest-contacts">
           <label class="contest-contacts__personal-label" for="last-name">Фамилия:</label>
           <input class="contest-contacts__personal-input" type="text" name="personal-info" id="last-name" placeholder="Укажите фамилию">
@@ -37,7 +40,7 @@
           <input class="contest-contacts__personal-input" type="text" name="personal-info" id="patronymic-name" placeholder="Ну и отчество тоже">
         </section>
         <section class="contest-achievments">
-          <h2 class="contest-achievments__text">Ваши безбашенные достижения в путешествии</h2> 
+          <h2 class="contest-achievments__text">Ваши безбашенные достижения в путешествии</h2>
           <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="selfie" checked>
           <label class="contest-achievments__select-label" for="selfie">Сделал селфи с акулой</label>
           <input class="contest-achievments__select-input" type="checkbox" name="achievment" id="sunburn" checked>
@@ -68,7 +71,7 @@
         </section>
         <section class="contest-feedback">
           <h2 class="contest-feedback__text">Опишите свои эмоции</h2>
-          <textarea rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea rows="10" cols="40">Можно прям в красках, не стесняясь в выражениях</textarea>
         </section>
         <input type="submit" value="Отправить форму">
       </form>
@@ -76,7 +79,7 @@
     </div>
     <footer>
       <div class="footer__logo">
-        <a href="#"><img src="img/logo.svg" alt="Pink"></a>
+        <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="Pink"></a>
       </div>
       <div class="footer__social">
         <a class="footer__social-button  footer__social-button--twitter" href="#">Twitter</a>

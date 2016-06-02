@@ -2,21 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <title>HTML Academy: Пинк. Фото</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav  main-nav--closed">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
         <a class="main-nav__btn--close"></a>
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a>Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a>Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
       </nav>
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo.svg" alt="Pink"></a>
+        <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
       </div>
       <a class="main-nav__btn--open"></a>
     </header>
@@ -24,8 +27,9 @@
       <h1 class="photo-intro__text">Фотографии пользователей</h1>
     </div>
     <section class="photos">
+      <p class="photos__look">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <div class="photos__panorama">
-        <img src="img/panorama.jpg" alt="Фото">
+        <img src="img/panorama-mobile@1x.jpg" alt="Фото">
         <div class="photos__text">
           <h3 class="photos__name">Анна </h3><span class="photos__time">(5 минут назад)</span>
           <p class="photos__desrc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
@@ -33,47 +37,59 @@
         </div>
       </div>
       <article class="photos__standard">
-        <img src="img/photo2.jpg" alt="Фото">
-        <h3 class="photos__name">Ливон </h3><span class="photos__time">(5 часов назад)</span>
-        <p class="photos__desrc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">356</span>
+        <img src="img/photo-1-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Ливон </h3><span class="photos__time">(5 часов назад)</span>
+          <p class="photos__desrc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">356</span>
+        </div>
       </article>
       <article class="photos__standard">
-        <img src="img/photo3.jpg" alt="Фото">
-        <h3 class="photos__name">Антон </h3><span class="photos__time">(12 часов назад)</span>
-        <p class="photos__desrc">Соседи будут рады!!</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">666</span>
+        <img src="img/photo-2-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Антон </h3><span class="photos__time">(12 часов назад)</span>
+          <p class="photos__desrc">Соседи будут рады!!</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">666</span>
+        </div>
       </article>
       <article class="photos__standard">
-        <img src="img/photo4.jpg" alt="Фото">
-        <h3 class="photos__name">Борис </h3><span class="photos__time">(20 часов назад)</span>
-        <p class="photos__desrc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">215</span>
+        <img src="img/photo-3-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Борис </h3><span class="photos__time">(20 часов назад)</span>
+          <p class="photos__desrc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">215</span>
+        </div>
       </article>
       <article class="photos__standard">
-        <img src="img/photo5.jpg" alt="Фото">
-        <h3 class="photos__name">Сергей </h3><span class="photos__time">(25 часов назад)</span>
-        <p class="photos__desrc">Самая кубанская в мире!</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">4</span>
+        <img src="img/photo-4-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Сергей </h3><span class="photos__time">(25 часов назад)</span>
+          <p class="photos__desrc">Самая кубанская в мире!</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">4</span>
+        </div>
       </article>
       <article class="photos__standard">
-        <img src="img/photo6.jpg" alt="Фото">
-        <h3 class="photos__name">Максим </h3><span class="photos__time">(40 часов назад)</span>
-        <p class="photos__desrc">Где снег-то?</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">150</span>
+        <img src="img/photo-5-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Максим </h3><span class="photos__time">(40 часов назад)</span>
+          <p class="photos__desrc">Где снег-то?</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">150</span>
+        </div>
       </article>
       <article class="photos__standard">
-        <img src="img/photo7.jpg" alt="Фото">
-        <h3 class="photos__name">Надежда</h3><span class="photos__time">(45 часов назад)</span>
-        <p class="photos__desrc">Всем GM и взаимные лайки!</p>
-        <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">2560</span>
+        <img src="img/photo-6-mobile@1x.jpg" alt="Фото">
+        <div class="photos__text">
+          <h3 class="photos__name">Надежда</h3><span class="photos__time">(45 часов назад)</span>
+          <p class="photos__desrc">Всем GM и взаимные лайки!</p>
+          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">2560</span>
+        </div>
       </article>
     </section>
     <section class="app-appeal">
       <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="photo-edit">
-      <img src="img/photo-edit.jpg" alt="Редактирование фото">
+      <img src="img/photo-7-mobile@1x.jpg" alt="Редактирование фото">
       <form class="photo-edit__form">
         <div class="photo-edit__tools">
           <button class="photo-edit__crop" type="submit"></button>
@@ -88,7 +104,7 @@
     </section>
     <footer>
       <div class="footer__logo">
-        <a href="#"><img src="img/logo.svg" alt="Pink"></a>
+        <a href="#"><img src="img/logo-pink-blue-mobile.svg" alt="Pink"></a>
       </div>
       <div class="footer__social">
         <a class="footer__social-button  footer__social-button--twitter" href="#">Twitter</a>
