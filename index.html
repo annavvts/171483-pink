@@ -2,30 +2,38 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav  main-nav--closed">
-      <a class="main-nav__btn--close"></a>
-      <ul class="main-nav__items">
-        <li class="main-nav__item"><a>Главная</a></li>
-        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-        <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
-      </ul>
-    </nav>
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+        <a class="main-nav__btn--close"></a>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
       <div class="page-header__logo">
-        <img src="img/logo.svg" alt="Pink">
+        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
       </div>
       <a class="main-nav__btn--open"></a>
     </header>
+    <div class="app-image">
+      <h2>Взгляните на жизнь иначе!</h2>
+      <img src="img/iphone-hand-mobile@1x.png">
+    </div>
     <section class="download">
       <a class="download__title" href="#">Скачать приложение</a>
       <div class="download__icons">
-        <a class="download__icon" href="#"><img src="img/apple-icon.svg" alt="Apple"></a>
-        <a class="download__icon" href="#"><img src="img/android-icon.svg" alt="Android"></a>
-        <a class="download__icon" href="#"><img src="img/windows-icon.svg" alt="Windows Phone"></a>
+        <a class="download__icon" href="#"><img src="img/logo-apple.svg" width="47px"
+      height="56px" alt="Apple"></a>
+        <a class="download__icon" href="#"><img src="img/logo-android.svg" width="44px" height="50px" alt="Android"></a>
+        <a class="download__icon" href="#"><img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Windows Phone"></a>
       </div>
       <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
@@ -46,7 +54,7 @@
         <h3 class="app-reasons__title">Заводит новых друзей</h3>
         <p class="app-reasons__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       </div>
-      <img src="img/hello-screen.svg" alt="Всем привет!">
+      <img src="img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Всем привет!">
     </section>
     <section class="reviews  slider">
       <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
@@ -75,14 +83,13 @@
       <div class="contacts__wrapper">
         <h2 class="contacts__text">Остались вопросы? Свяжитесь с нами!</h2>
         <h3 class="contacts__title" href="#">Звоните:</h3>
-        <a class="contacts__info">+7 (812) 555-66-66</a>
+        <a class="contacts__info" href="#">+7 (812) 555-66-66</a>
         <h3 class="contacts__title">Пишите:</h3>
         <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
         <h3 class="contacts__title">Приезжайте в гости:</h3>
         <a class="contacts__info" href="#">ул. Большая Конюшенная, 19/8</a>
       </div>
       <div class="contacts__map">
-        <img src="img/map.svg" alt="Карта">
       </div>
     </section>
   </body>
