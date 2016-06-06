@@ -1,0 +1,41 @@
+.app-effect {
+    width: 100%;
+    .clearfix();
+
+    .app-effect__descr {
+      float: right;
+    }
+
+    img {
+      float: left;
+    }
+
+     @media @desktop-widths {
+      .app-effect__title {
+        font-size: 30px;
+        line-height: 20px;
+      }
+
+      .app-effect__text {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    @media @tablet-widths {
+      .app-effect__title {
+        font-size: 30px;
+        line-height: 36px;
+      }
+
+      .app-effect__text {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+
+    @media @mobile-widths {
+      display: none;
+    }
+
+}

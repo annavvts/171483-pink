@@ -2,7 +2,15 @@
     padding: 40px 20px;
     background: @gray;
 
-    &__text {
+    @media @desktop-widths {
+      background: @white;
+    }
+
+    @media @tablet-widths {
+      background: @white;
+    }
+
+    .contest-achievments__text {
       font-size: 14px;
       line-height: 18px;
       color: @pink;
@@ -10,7 +18,7 @@
       font-weight: 400;
     }
 
-    &__select-label {
+    .contest-achievments__select-label {
       font-size: 18px;
       line-height: 30px;
       color: @blue;

@@ -1,33 +1,58 @@
 .download {
-    background-color: @dark-blue;
-    color: @white;
-    padding: 30px 20px;
 
-    a {
-      text-decoration: none;
+  @media @desktop-widths {
+    float: left;
+  }
+
+  @media @tablet-widths {
+    float: left;
+  }
+
+
+    .download__wrapper {
       color: @white;
-      font-size: 18px;
-      line-height: 18px;
-      font-weight: 700;
-    }
+      padding: 30px 20px;
 
-    &__title {
-      display: inline-block;
-      margin: 0px auto;
-      padding: 20px 40px;
-      border: 3px solid @white;
-      border-radius: 30px;
-      width: 280px;
-    }
+      @media @desktop-widths {
+        background-color: transparent;
+      }
 
-    &__descr {
-      font-size: 14px;
-      line-height: 24px;
-      font-weight: 300;
-    }
+      @media @tablet-widths {
+        background-color: transparent;
+      }
 
-    &__icons {
-      margin-top: 30px;
+      @media @mobile-widths {
+        background-color: @dark-blue;
+        margin-top: 395px;
+      }
+
+      a {
+        text-decoration: none;
+        color: @white;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 700;
+      }
+
+      .download__title {
+        display: inline-block;
+        margin: 0px auto;
+        padding: 20px 40px;
+        border: 3px solid @white;
+        border-radius: 30px;
+        width: 280px;
+      }
+
+      .download__descr {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+      }
+
+      .download__icons {
+        margin-top: 30px;
+      }
+
     }
 
 }

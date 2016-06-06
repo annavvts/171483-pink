@@ -5,11 +5,15 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    &__personal-input {
+    .contest-connect__personal-input {
       width: 100%;
+
+      @media @desktop-widths {
+        width: 373px;
+      }
     }
 
-    &__personal-label {
+    .contest-connect__personal-label {
       font-size: 14px;
       line-height: 30px;
       color: @pink;
@@ -18,6 +22,29 @@
       margin-top: 25px;
       margin-bottom: 15px;
       margin-left: 20px;
+    }
+
+    .mobile-only {
+      @media @desktop-widths {
+        display: none;
+      }
+
+      @media @tablet-widths {
+        display: none;
+      }
+    }
+
+    .contest-connect__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: @pink;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+
+      @media @mobile-widths {
+        display: none;
+      }
     }
 
 }
