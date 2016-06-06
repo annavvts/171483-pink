@@ -5,11 +5,22 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    &__personal-input {
-      width: 100%;
+    .contest-contacts__personal-input {
+
+      @media @mobile-widths {
+        width: 100%;
+      }
+
+      @media @tablet-widths {
+        max-width: 560px;
+      }
+
+      @media @desktop-widths {
+        max-widths: 380px;
+      }
     }
 
-    &__personal-label {
+    .contest-contacts__personal-label {
       font-size: 14px;
       line-height: 30px;
       color: @pink;
@@ -18,6 +29,5 @@
       margin-top: 25px;
       margin-bottom: 15px;
       margin-left: 20px;
-
     }
 }

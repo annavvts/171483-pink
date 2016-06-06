@@ -4,7 +4,15 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    &__text {
+    @media @desktop-widths {
+      background: @white;
+    }
+
+    @media @tablet-widths {
+      background: @white;
+    }
+
+    .contest-app__text {
       font-size: 14px;
       line-height: 18px;
       color: @pink;
@@ -13,7 +21,7 @@
       margin-bottom: 35px;
     }
 
-    &__select-label {
+    .contest-app__select-label {
       font-size: 18px;
       line-height: 30px;
       color: @blue;

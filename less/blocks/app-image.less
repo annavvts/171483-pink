@@ -1,16 +1,40 @@
 .app-image {
-    height: 460px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 180%;
-    background-position: center;
+    background-size: cover;
+
+    @media @desktop-widths {
+      .clearfix();
+      height: 750px;
+    }
+
+    @media @tablet-widths {
+      .clearfix();
+      height: 670px;
+    }
+
+    @media @mobile-widths {
+      height: 395px;
+    }
 
     h2 {
       margin: 0;
       color: @white;
-      font-size: 24px;
       font-weight: 300;
-      padding-top: 90px;
-    }
 
+      @media @desktop-widths {
+        font-size: 50px;
+        padding-top: 130px;
+      }
+
+      @media @tablet-widths {
+        font-size: 40px;
+        padding-top: 100px;
+      }
+
+      @media @mobile-widths {
+        font-size: 24px;
+        padding-top: 90px;
+      }
+    }
 }

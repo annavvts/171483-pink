@@ -8,20 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav  main-nav--closed">
+      <nav class="page-header__nav">
         <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-        <a class="main-nav__btn--close"></a>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a>Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        <a class="page-header__btn"></a>
+        <ul class="page-header__items">
+          <li class="page-header__item"><a href="index.html">Главная</a></li>
+          <li class="page-header__item"><a>Фотографии</a></li>
+          <li class="page-header__item"><a href="form.html">Конкурс</a></li>
+          <li class="page-header__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
       </nav>
       <div class="page-header__logo">
         <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
       </div>
-      <a class="main-nav__btn--open"></a>
+      <a class="page-header__btn"></a>
+    </header>
+    <header class="page-header-desktop">
+      <img class="desktop-logo">
+      <ul class="page-header-desktop__items">
+          <li class="page-header-desktop__item"><a href="index.html">Главная</a></li>
+          <li class="page-header-desktop__item"><a>Фотографии</a></li>
+          <li class="page-header-desktop__item"><a href="form.html">Конкурс</a></li>
+          <li class="page-header-desktop__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
     </header>
     <div class="photo-intro">
       <h1 class="photo-intro__text">Фотографии пользователей</h1>
@@ -36,54 +45,56 @@
           <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">215</span>
         </div>
       </div>
-      <article class="photos__standard">
-        <img src="img/photo-1-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Ливон </h3><span class="photos__time">(5 часов назад)</span>
-          <p class="photos__desrc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">356</span>
-        </div>
-      </article>
-      <article class="photos__standard">
-        <img src="img/photo-2-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Антон </h3><span class="photos__time">(12 часов назад)</span>
-          <p class="photos__desrc">Соседи будут рады!!</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">666</span>
-        </div>
-      </article>
-      <article class="photos__standard">
-        <img src="img/photo-3-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Борис </h3><span class="photos__time">(20 часов назад)</span>
-          <p class="photos__desrc">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">215</span>
-        </div>
-      </article>
-      <article class="photos__standard">
-        <img src="img/photo-4-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Сергей </h3><span class="photos__time">(25 часов назад)</span>
-          <p class="photos__desrc">Самая кубанская в мире!</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">4</span>
-        </div>
-      </article>
-      <article class="photos__standard">
-        <img src="img/photo-5-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Максим </h3><span class="photos__time">(40 часов назад)</span>
-          <p class="photos__desrc">Где снег-то?</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">150</span>
-        </div>
-      </article>
-      <article class="photos__standard">
-        <img src="img/photo-6-mobile@1x.jpg" alt="Фото">
-        <div class="photos__text">
-          <h3 class="photos__name">Надежда</h3><span class="photos__time">(45 часов назад)</span>
-          <p class="photos__desrc">Всем GM и взаимные лайки!</p>
-          <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">2560</span>
-        </div>
-      </article>
+      <div class="photos__wrapper">
+        <article class="photos__standard">
+          <img src="img/photo-1-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Ливон </h3><span class="photos__time">(5 часов назад)</span>
+            <p class="photos__desrc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">356</span>
+          </div>
+        </article>
+        <article class="photos__standard">
+          <img src="img/photo-2-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Антон </h3><span class="photos__time">(12 часов назад)</span>
+            <p class="photos__desrc">Соседи будут рады!!</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">666</span>
+          </div>
+        </article>
+        <article class="photos__standard">
+          <img src="img/photo-3-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Борис </h3><span class="photos__time">(20 часов назад)</span>
+            <p class="photos__desrc">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">215</span>
+          </div>
+        </article>
+        <article class="photos__standard">
+          <img src="img/photo-4-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Сергей </h3><span class="photos__time">(25 часов назад)</span>
+            <p class="photos__desrc">Самая кубанская в мире!</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">4</span>
+          </div>
+        </article>
+        <article class="photos__standard">
+          <img src="img/photo-5-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Максим </h3><span class="photos__time">(40 часов назад)</span>
+            <p class="photos__desrc">Где снег-то?</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">150</span>
+          </div>
+        </article>
+        <article class="photos__standard">
+          <img src="img/photo-6-mobile@1x.jpg" alt="Фото">
+          <div class="photos__text">
+            <h3 class="photos__name">Надежда</h3><span class="photos__time">(45 часов назад)</span>
+            <p class="photos__desrc">Всем GM и взаимные лайки!</p>
+            <a class="photos__like" href="#">Нравится: </a><span class="photos__like-count">2560</span>
+          </div>
+        </article>
+      </div>
     </section>
     <section class="app-appeal">
       <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>

@@ -1,36 +1,109 @@
 .photos {
 
-    &__look {
-      font-size: 14px;
+    .photos__look {
       line-height: 30px;
       color: @blue;
+
+      @media @desktop-widths {
+        font-size: 18px;
+      }
+
+      @media @tablet-widths {
+        font-size: 18px;
+      }
+
+      @media @mobile-widths {
+        font-size: 14px;
+      }
     }
 
-    &__text {
+    .photos__text {
       background: @gray;
-      padding: 25px 20px;
-      margin: 0 20px 20px;
       text-align: left;
       font-size: 14px;
       line-height: 24px;
       color: @blue;
+
+      @media @desktop-widths {
+        padding: 30px 25px;
+      }
+
+      @media @tablet-widths {
+        padding: 30px 25px;
+      }
+
+      @media @mobile-widths {
+        padding: 25px 15px;
+      }
     }
 
-    &__name {
+    .photos__name {
       font-weight: 700;
     }
 
-    &__time {
+    .photos__time {
       font-size: 12px;
       font-weight: 300;
       text-transform: uppercase;
     }
 
-    &__like, &__like-count {
+    .photos__like, .photos__like-count {
       font-size: 12px;
       color: @pink;
       text-transform: uppercase;
       text-decoration: none;
+    }
+
+    .photos__wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      font-size: 0;
+
+      @media @desktop-widths {
+        padding-left: 130px;
+        padding-right: 130px;
+      }
+
+      @media @tablet-widths {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      @media @mobile-widths {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .photos__standard {
+
+        display: inline-block;
+
+        @media @desktop-widths {
+          margin-top: 50px;
+          width: 30%;
+
+          &:nth-child(3n+2) {
+            margin-left: 20px;
+            margin-right: 20px;
+          }
+        }
+
+        @media @tablet-widths {
+          margin-top: 50px;
+          width: 45%;
+
+          &:nth-child(2n+1) {
+            margin-right: 20px;
+          }
+        }
+
+        @media @mobile-widths {
+          margin-top: 25px;
+          width: 100%;
+        }
+
+      }
     }
 
 }

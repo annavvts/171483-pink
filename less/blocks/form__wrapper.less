@@ -1,4 +1,23 @@
 .form__wrapper {
+  .clearfix();
+  margin-left: auto;
+  margin-right: auto;
+
+  @media @desktop-widths {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .form__required {
+    @media @desktop-widths {
+      float: right;
+    }
+
+    @media @tablet-widths {
+      float: right;
+      padding-right: 40px;
+    }
+  }
 
   .form__text {
     font-size: 14px;
@@ -11,6 +30,19 @@
     font-size: 14px;
     line-height: 30px;
     color: @pink;
+  }
+
+  .form__submit {
+
+    @media @desktop-widths {
+      float: left;
+    }
+
+    @media @tablet-widths {
+      float: left;
+      margin-left: 40px;
+    }
+
   }
 
 }

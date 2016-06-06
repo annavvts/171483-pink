@@ -2,10 +2,21 @@
     padding: 50px 20px;
     background: @white;
 
-    &__text {
-      font-size: 14px;
+    .contest-descr__text {
       line-height: 30px;
       color: @blue;
+
+      @media @desktop-widths {
+        font-size: 18px;
+      }
+
+      @media @tablet-widths {
+        font-size: 18px;
+      }
+
+      @media @mobile-widths {
+        font-size: 14px;
+      }
     }
 }
 

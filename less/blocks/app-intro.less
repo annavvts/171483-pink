@@ -2,14 +2,29 @@
     background-color: @white;
     color: @blue;
     padding-top: 45px;
+    padding-bottom: 45px;
 
 
-    &__text {
-      font-size: 24px;
+    .app-intro__text {
       font-weight: 300;
       padding-left: 35px;
       padding-right: 35px;
-      padding-bottom: 35px;
+
+      @media @desktop-widths {
+        font-size: 50px;
+      }
+
+      @media @tablet-widths {
+        font-size: 40px;
+      }
+
+      @media @mobile-widths {
+        font-size: 24px;
+
+        &:first-child {
+          margin-bottom: 35px;
+        }
+      }
     }
 
 }
