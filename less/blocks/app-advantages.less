@@ -3,21 +3,31 @@
     color: @blue;
     padding: 0 20px;
     padding-top: 40px;
-    .clearfix();
+    display: flex;
+
+    @media @desktop-widths {
+      flex-direction: row;
+    }
+
+    @media @tablet-widths {
+      flex-direction: column;
+    }
+
+    @media @mobile-widths {
+      flex-direction: column;
+    }
 
     .app__reasons {
+
       @media @desktop-widths {
         width: 33%;
-        display: inline-block;
       }
 
       @media @tablet-widths {
         width: 50%;
-        float: right;
       }
 
       @media @mobile-widths {
-        float: none;
         width: 100%;
       }
 

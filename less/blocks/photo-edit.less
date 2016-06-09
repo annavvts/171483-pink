@@ -1,49 +1,23 @@
 .photo-edit {
     background: @gray;
-    .clearfix();
+    display: flex;
+    justify-content: space-around;
 
     @media @desktop-widths {
       padding: 55px 80px;
       margin-left: 130px;
       margin-right: 130px;
+      flex-direction: row;
     }
 
     @media @tablet-widths {
       padding: 60px 40px;
+      flex-direction: row;
     }
 
     @media @mobile-widths {
       padding: 20px;
-    }
-
-    img {
-
-      @media @desktop-widths {
-        float: left;
-      }
-
-      @media @tablet-widths {
-        float: left;
-      }
-
-      @media @mobile-widths {
-        float: none;
-      }
-    }
-
-    .photo-edit__form {
-
-      @media @desktop-widths{
-        float: right;
-      }
-
-      @media @tablet-widths{
-        float: right;
-      }
-
-      @media @mobile-widths {
-        float: none;
-      }
+      flex-direction: column;
     }
 }
 

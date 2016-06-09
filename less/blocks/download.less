@@ -1,13 +1,11 @@
 .download {
 
   @media @desktop-widths {
-    float: left;
+     display: flex;
+     justify-content: flex-start;
+     max-width: 320px;
+     flex-wrap: wrap;
   }
-
-  @media @tablet-widths {
-    float: left;
-  }
-
 
     .download__wrapper {
       color: @white;
@@ -23,7 +21,7 @@
 
       @media @mobile-widths {
         background-color: @dark-blue;
-        margin-top: 395px;
+        margin-top: 272px
       }
 
       a {
