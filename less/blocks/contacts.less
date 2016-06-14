@@ -9,10 +9,18 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: center;
+      margin: 0 auto;
+
+      @media @desktop-widths {
+        width: 940px;
+      }
+
+      @media @tablet-widths {
+        width: 620px;
+      }
 
       @media @mobile-widths {
-        padding-left: 20px;
-        padding-right: 20px;
+        width: 280px;
       }
     }
 

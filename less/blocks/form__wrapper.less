@@ -3,16 +3,27 @@
   flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
+  @media @desktop-widths {
+    width: 940px;
+  }
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @mobile-widths {
+    width: 100%;
+  }
+
 
   .form-area {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .form__text {

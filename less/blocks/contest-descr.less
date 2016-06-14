@@ -1,6 +1,20 @@
 .contest-descr {
-    padding: 50px 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: @white;
+    margin: 0 auto;
+
+    @media @desktop-widths {
+      width: 940px;
+    }
+
+    @media @tablet-widths {
+      width: 620px;
+    }
+
+    @media @mobile-widths {
+      width: 280px;
+    }
 
     .contest-descr__text {
       line-height: 30px;
