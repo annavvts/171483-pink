@@ -1,8 +1,29 @@
 .contest-feedback {
-    padding: 57px 20px 47px;
     background: @white;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @media @desktop-widths {
+      order: 5;
+      border: 2px solid @border-light;
+      margin-top: 55px;
+      width: 100%;
+    }
+
+    @media @tablet-widths {
+      order: 5;
+      border: 2px solid @border-light;
+      margin-top: 55px;
+      width: 100%;
+    }
+
+    @media @mobile-widths {
+      border: none;
+      margin: 0 0;
+      width: 280px;
+      margin: 0 auto;
+      order: 0;
+      padding-top: 60px;
+      padding-bottom: 45px;
+    }
 
     .contest-feedback__text {
       font-size: 14px;

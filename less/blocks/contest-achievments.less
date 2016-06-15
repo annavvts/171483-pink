@@ -1,13 +1,34 @@
 .contest-achievments {
-    padding: 40px 20px;
-    background: @gray;
 
     @media @desktop-widths {
+      order: 4;
+      border: 2px solid @border-light;
       background: @white;
+      margin-top: 55px;
     }
 
     @media @tablet-widths {
+      order: 4;
+      border: 2px solid @border-light;
       background: @white;
+      margin-top: 55px;
+    }
+
+    @media @mobile-widths {
+      border: none;
+      margin: 0 0;
+      order: 0;
+      background: @gray;
+      padding-top: 37px;
+      padding-bottom: 50px;
+      width: 100%;
+    }
+
+    .contest-achievments__wrapper {
+      @media @mobile-widths {
+        width: 280px;
+        margin: 0 auto;
+      }
     }
 
     .contest-achievments__text {

@@ -2,21 +2,35 @@
     padding-bottom: 45px;
     background: @white;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 0 auto;
+
+    @media @desktop-widths {
+      width: 50%;
+      order: 1;
+    }
+
+    @media @tablet-widths {
+      width: 620px;
+      order: 1;
+    }
+
+    @media @mobile-widths {
+      width: 280px;
+      order: 0;
+    }
 
     .contest-contacts__personal-input {
 
-      @media @mobile-widths {
-        width: 100%;
+      @media @desktop-widths {
+        width: 80%;
       }
 
       @media @tablet-widths {
-        max-width: 560px;
+        width: 80%;
       }
 
-      @media @desktop-widths {
-        max-widths: 380px;
+      @media @mobile-widths {
+        width: 90%;
       }
     }
 

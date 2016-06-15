@@ -1,6 +1,6 @@
 .page-header-desktop {
     background-color: @dark-blue;
-    padding: 55px 130px;
+    padding: 35px 130px;
 
     @media @mobile-widths {
       display: none;
@@ -11,21 +11,19 @@
     }
 
     .page-header-desktop__items {
-        float: right;
-        padding-right: 90px;
+      display: inline-flex;
+      min-width: 600px;
+      justify-content: space-between;
+      list-style: none;
     }
 
-      .page-header-desktop__item {
-      display: inline;
-      padding-left: 38px;
-      padding-right: 38px;
+    .page-header-desktop__item {
+
+      a {
+        text-decoration: none;
+        color: @white;
       }
-        a {
-          text-decoration: none;
-          color: @white;
-        }
 
-
-
+    }
 
 }

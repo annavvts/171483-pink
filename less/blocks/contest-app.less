@@ -1,15 +1,33 @@
 .contest-app {
-    padding: 37px 20px;
-    background: @gray;
-    padding-left: 20px;
-    padding-right: 20px;
 
     @media @desktop-widths {
+      width: 50%;
+      order: 2;
+      border: 2px solid @border-light;
       background: @white;
     }
 
     @media @tablet-widths {
+      width: 100%;
+      order: 2;
+      border: 2px solid @border-light;
       background: @white;
+    }
+
+    @media @mobile-widths {
+      border: none;
+      margin: 0 0;
+      width: 100%;
+      order: 0;
+      background: @gray;
+      padding: 40px 20px;
+    }
+
+    .contest-app__wrapper {
+      @media @mobile-widths {
+        width: 280px;
+        margin: 0 auto;
+      }
     }
 
     .contest-app__text {

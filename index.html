@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -53,17 +53,19 @@
       <h2 class="app-intro__text">Нам есть, что вам предложить!</h2>
     </section>
     <section class="app-advantages">
-      <div class="app__reasons">
-        <h3 class="app-reasons__title">Поднимает настроение</h3>
-        <p class="app-reasons__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </div>
-      <div class="app__reasons">
-        <h3 class="app-reasons__title">Меняет мир вокруг</h3>
-        <p class="app-reasons__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="app__reasons">
-        <h3 class="app-reasons__title">Заводит новых друзей</h3>
-        <p class="app-reasons__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="app-advantages__wrapper">
+        <div class="app__reasons">
+          <h3 class="app-reasons__title">Поднимает настроение</h3>
+          <p class="app-reasons__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="app__reasons">
+          <h3 class="app-reasons__title">Меняет мир вокруг</h3>
+          <p class="app-reasons__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="app__reasons">
+          <h3 class="app-reasons__title">Заводит новых друзей</h3>
+          <p class="app-reasons__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
       </div>
     </section>
     <section class="app-effect">
@@ -75,9 +77,11 @@
       </div>
     </section>
     <section class="reviews  slider">
-      <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
-      <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
-      <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+      <div class="slider__wrapper">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+      </div>
       <h4 class="reviews__name">Николай Петров</h4>
       <p class="reviews__info">25 лет, водитель трамвая</p>
       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>

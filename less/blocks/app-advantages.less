@@ -1,23 +1,39 @@
 .app-advantages {
     background-color: @gray;
     color: @blue;
-    padding: 0 20px;
     padding-top: 40px;
-    .clearfix();
+
+    .app-advantages__wrapper {
+      display: flex;
+      margin: 0 auto;
+
+      @media @desktop-widths {
+        width: 940px;
+        flex-direction: row;
+      }
+
+      @media @tablet-widths {
+        width: 620px;
+        flex-direction: column;
+      }
+
+      @media @mobile-widths {
+        width: 280px;
+        flex-direction: column;
+      }
+    }
 
     .app__reasons {
+
       @media @desktop-widths {
         width: 33%;
-        display: inline-block;
       }
 
       @media @tablet-widths {
         width: 50%;
-        float: right;
       }
 
       @media @mobile-widths {
-        float: none;
         width: 100%;
       }
 

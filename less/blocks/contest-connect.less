@@ -1,15 +1,42 @@
 .contest-connect {
-    padding: 37px 20px;
     background: @white;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    @media @desktop-widths {
+      order: 3;
+      border: 2px solid @border-light;
+      margin-top: 55px;
+      width: 940px;
+    }
+
+    @media @tablet-widths {
+      order: 3;
+      border: 2px solid @border-light;
+      margin-top: 55px;
+      width: 620px;
+    }
+
+    @media @mobile-widths {
+      border: none;
+      margin: 0 0;
+      width: 280px;
+      order: 0;
+      padding-top: 40px;
+      padding-bottom: 50px;
+    }
 
     .contest-connect__personal-input {
-      width: 100%;
 
       @media @desktop-widths {
         width: 373px;
+      }
+
+      @media @tablet-widths {
+        width: 100%;
+      }
+
+      @media @mobile-widths {
+        width: 90%;
       }
     }
 
@@ -25,11 +52,31 @@
     }
 
     .mobile-only {
+
       @media @desktop-widths {
         display: none;
       }
 
       @media @tablet-widths {
+        display: none;
+      }
+
+      @media @mobile-widths {
+        display: inline;
+      }
+    }
+
+    .desktop {
+
+      @media @desktop-widths {
+        display: inline;
+      }
+
+      @media @tablet-widths {
+        display: inline;
+      }
+
+      @media @mobile-widths {
         display: none;
       }
     }
