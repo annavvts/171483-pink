@@ -9,8 +9,10 @@
   <body>
     <header class="page-header">
       <nav class="page-header__nav">
-        <img class="tablet-logo">
-        <img class="mobile-logo" src="img/logo-pink-white-mobile.svg" alt="Pink">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+        </picture>
         <a class="page-header__btn"></a>
         <ul class="page-header__items">
           <li class="page-header__item"><a>Главная</a></li>
@@ -20,33 +22,43 @@
         </ul>
       </nav>
       <div class="page-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+        </picture>
       </div>
       <a class="page-header__btn"></a>
     </header>
     <header class="page-header-desktop">
-      <img class="desktop-logo">
-      <ul class="page-header-desktop__items">
+      <div class="page-header-desktop__wrapper">
+        <img src="img/logo-pink-white-desktop.svg">
+        <ul class="page-header-desktop__items">
           <li class="page-header-desktop__item"><a>Главная</a></li>
           <li class="page-header-desktop__item"><a href="photo.html">Фотографии</a></li>
           <li class="page-header-desktop__item"><a href="form.html">Конкурс</a></li>
           <li class="page-header-desktop__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
+      </div>
     </header>
     <div class="app-image">
-    <section class="download">
-      <h2>Взгляните на жизнь иначе!</h2>
-      <div class="download__wrapper">
-        <a class="download__title" href="#">Скачать приложение</a>
-        <div class="download__icons">
-          <a class="download__icon" href="#"><img src="img/logo-apple.svg" width="47px"
-        height="56px" alt="Apple"></a>
-          <a class="download__icon" href="#"><img src="img/logo-android.svg" width="44px" height="50px" alt="Android"></a>
-          <a class="download__icon" href="#"><img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Windows Phone"></a>
+      <section class="download">
+        <h2>Взгляните на жизнь иначе!</h2>
+        <div class="download__wrapper">
+          <a class="download__title" href="#">Скачать приложение</a>
+          <div class="download__icons">
+            <a class="download__icon" href="#"><img src="img/logo-apple.svg" width="47px"
+          height="56px" alt="Apple"></a>
+            <a class="download__icon" href="#"><img src="img/logo-android.svg" width="44px" height="50px" alt="Android"></a>
+            <a class="download__icon" href="#"><img src="img/logo-microsoft.svg" width="44px" height="41px" alt="Windows Phone"></a>
+          </div>
+          <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="download__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
-    </section>
+      </section>
+      <picture class="app-image__picture">
+        <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+        <source media="(min-width: 767px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+        <img src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение Pink">
+      </picture>
     </div>
     <section class="app-intro">
       <h2 class="app-intro__text">Устали от серости мегаполиса?</h2>
@@ -55,14 +67,17 @@
     <section class="app-advantages">
       <div class="app-advantages__wrapper">
         <div class="app__reasons">
+          <img class="app-advantages__mood" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@1x.png 1x img/iphone-screen-1-desktop@2x.png 2x" alt="Поднимает настроение">
           <h3 class="app-reasons__title">Поднимает настроение</h3>
           <p class="app-reasons__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
         <div class="app__reasons">
+          <img class="app-advantages__change" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@1x.png 1x img/iphone-screen-2-desktop@2x.png 2x" alt="Меняет мир">
           <h3 class="app-reasons__title">Меняет мир вокруг</h3>
           <p class="app-reasons__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
         <div class="app__reasons">
+          <img class="app-advantages__friends" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@1x.png 1x img/iphone-screen-3-desktop@2x.png 2x" alt="Заводит друзей">
           <h3 class="app-reasons__title">Заводит новых друзей</h3>
           <p class="app-reasons__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>

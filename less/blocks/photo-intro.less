@@ -3,8 +3,12 @@
     display: flex;
     justify-content: center;
 
+    @media @retina {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+
     @media @desktop-widths {
-      height: 290px;
+      height: 395px;
       background-size: cover;
     }
 
@@ -12,6 +16,7 @@
       height: 330px;
       background-size: 150%;
       background-position: -200px -158px;
+      margin-top: 346px;
     }
 
     @media @mobile-widths {
@@ -29,6 +34,7 @@
 
       @media @desktop-widths {
         font-size: 50px;
+        padding-top: 180px;
       }
 
       @media @tablet-widths {

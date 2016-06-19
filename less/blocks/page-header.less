@@ -1,5 +1,9 @@
 .page-header {
-    background-color: @dark-blue;
+    background-color: fade(@dark-blue, 70%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
     color: @white;
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +44,12 @@
         font-weight: 700;
       }
 
-    }
+      }
+
+      .page-header__logo {
+        align-self: flex-start;
+      }
+
+
 
 }

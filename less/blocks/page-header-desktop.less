@@ -1,6 +1,11 @@
 .page-header-desktop {
-    background-color: @dark-blue;
-    padding: 35px 130px;
+    background-color: fade(@dark-blue, 70%);
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
 
     @media @mobile-widths {
       display: none;
@@ -10,11 +15,21 @@
       display: none;
     }
 
-    .page-header-desktop__items {
+    .page-header-desktop__wrapper {
+      margin: 0 auto;
+      width: 940px;
       display: inline-flex;
-      min-width: 600px;
       justify-content: space-between;
+    }
+
+    .page-header-desktop__items {
+      display: flex;
       list-style: none;
+      justify-content: space-between;
+      flex-grow: 1;
+      padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
     }
 
     .page-header-desktop__item {
@@ -26,4 +41,11 @@
 
     }
 
+    img {
+      margin-right: 160px;
+
+    }
+
 }
+
+

@@ -9,7 +9,10 @@
   <body>
     <header class="page-header">
       <nav class="page-header__nav">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+        </picture>
         <a class="page-header__btn"></a>
         <ul class="page-header__items">
           <li class="page-header__item"><a href="index.html">Главная</a></li>
@@ -19,18 +22,25 @@
         </ul>
       </nav>
       <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-pink-white-mobile.svg" alt="Pink"></a>
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="25" alt="Pink">
+          </picture>
+        </a>
       </div>
       <a class="page-header__btn"></a>
     </header>
     <header class="page-header-desktop">
-      <img class="desktop-logo">
-      <ul class="page-header-desktop__items">
+      <div class="page-header-desktop__wrapper">
+        <img src="img/logo-pink-white-desktop.svg">
+        <ul class="page-header-desktop__items">
           <li class="page-header-desktop__item"><a href="index.html">Главная</a></li>
           <li class="page-header-desktop__item"><a href="photo.html">Фотографии</a></li>
           <li class="page-header-desktop__item"><a>Конкурс</a></li>
           <li class="page-header-desktop__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
         </ul>
+      </div>
     </header>
     <div class="contest-intro">
       <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>

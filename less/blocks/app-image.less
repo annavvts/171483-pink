@@ -2,21 +2,59 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    z-index: 1;
     display: flex;
 
+    @media @retina {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
 
     @media @desktop-widths {
-      height: 750px;
+      height: 853px;
       justify-content: space-around;
     }
 
     @media @tablet-widths {
       height: 670px;
+      margin-top: 346px;
     }
 
     @media @mobile-widths {
       height: 395px;
     }
+
+    .app-image__picture {
+
+      position: absolute;
+
+
+       @media @desktop-widths {
+        width: 1050px;
+        height: 645px;
+        bottom: 0;
+        right: 50%;
+      }
+
+      @media @tablet-widths {
+        width: 470px;
+        height: 545px;
+        bottom: -180px;
+        left: 170px;
+      }
+
+      @media @mobile-widths {
+        width: 255px;
+        height: 287px;
+        bottom: -3px;
+        left: 40px;
+      }
+    }
+
+
+
+
+
 
     h2 {
       margin: 0;
