@@ -30,7 +30,7 @@
   },
   "scripts": {
     "test": "editorconfig-tools check *",
-    "build": "grunt less && grunt postcss && grunt csso",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "engines": {
