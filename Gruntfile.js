@@ -1,7 +1,16 @@
 "use strict";
 
 module.exports = function(grunt) {
-  require("load-grunt-tasks")(grunt);
+  grunt.loadNpmTasks("grunt-contrib-less");
+  grunt.loadNpmTasks("grunt-browser-sync");
+  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-csso");
+  grunt.loadNpmTasks("grunt-contrib-imagemin");
+  grunt.loadNpmTasks("grunt-svgstore");
+  grunt.loadNpmTasks("grunt-svgmin");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.initConfig({
     clean: {
       build: ["build"]
@@ -105,9 +114,6 @@ module.exports = function(grunt) {
         options: {
           server: ".",
           watchTask: true,
-          notify: false,
-          open: true,
-          ui: false
         }
       }
     },
@@ -115,13 +121,10 @@ module.exports = function(grunt) {
       html: {
         files: ["*.html"],
         tasks: ["copy:html"]
-      }
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss", "csso"],
-        options: {
-          spawn: false
-        }
+        tasks: ["less", "postcss", "csso"]
       }
     }
   });
