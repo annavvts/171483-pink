@@ -9,12 +9,14 @@ footer {
       flex-direction: row;
       width: 940px;
       margin: 0 auto;
+      padding-bottom: 70px;
     }
 
     @media @tablet-widths {
       flex-direction: row;
       width: 620px;
       margin: 0 auto;
+      padding-bottom: 35px;
     }
 
     @media @mobile-widths {
@@ -23,27 +25,147 @@ footer {
       margin: 0 auto;
     }
 
-    .footer__social-button {
-      font-size: 0;
+
+    .footer__logo {
+
+      @media @mobile-widths {
+        margin-bottom: 40px;
+      }
+
+      svg {
+        &:hover path {
+          fill: @pink;
+        }
+
+        &:active path {
+          opacity: 0.7;
+        }
+      }
     }
 
+    .footer__social {
+      margin-top: -10px;
+
+      @media @mobile-widths {
+        margin-bottom: 40px;
+      }
+    }
+
+    .footer__social-button {
+      font-size: 0;
+      position: relative;
+      width: 51px;
+      height: 51px;
+      display: inline-block;
+      border-radius: 50%;
+      border: 3px solid @border-social;
+      margin-right: 12px;
+
+      &:hover {
+        border: 3px solid @black;
+      }
+
+      &:active {
+        border: 3px solid @border-social;
+      }
+
+      &--twitter {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          background-image: url("../img/icon-twitter.svg");
+          background-repeat: no-repeat;
+          width: 18px;
+          height: 16px;
+      }
+
+        &:active {
+          opacity: 0.7;
+        }
+      }
+
+      &--fb {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 19px;
+          background-image: url("../img/icon-facebook.svg");
+          width: 10px;
+          height: 19px;
+        }
+
+        &:active {
+          opacity: 0.7;
+        }
+      }
+
+      &--youtube {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: 17px;
+          background-image: url("../img/icon-youtube.svg");
+          width: 15px;
+          height: 14px;
+        }
+
+        &:active {
+          opacity: 0.7;
+        }
+      }
+    }
+    .footer__copyright {
+      display: flex;
+      align-items: center;
+    }
     .footer__copyright p {
-      font-size: 14px;
+      margin: 0;
       line-height: 18px;
       color: @blue;
+      display: inline-block;
 
+      @media @desktop-widths {
+        font-size: 18px;
+      }
 
+      @media @tablet-widths {
+        font-size: 14px;
+      }
+
+      @media @mobile-widths {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 90px;
+      }
     }
 
     .footer__copyright a {
       font-size: 0;
     }
 
-    .main-footer {
+    .footer__copyright svg {
+      width: 27px;
+      height: 35px;
+      margin-left: 15px;
+
+      &:hover path {
+        fill: black;
+      }
+
+      &:active path {
+        fill: #bec2c7;
+      }
+    }
+
+}
+
+.main-footer {
 
       @media @mobile-widths {
         display: none;
       }
     }
-
-}

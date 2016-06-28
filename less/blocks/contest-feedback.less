@@ -1,10 +1,12 @@
 .contest-feedback {
     background: @white;
+    position: relative;
 
     @media @desktop-widths {
       order: 5;
       border: 2px solid @border-light;
       margin-top: 55px;
+      margin-bottom: 65px;
       width: 100%;
     }
 
@@ -13,6 +15,7 @@
       border: 2px solid @border-light;
       margin-top: 55px;
       width: 100%;
+      margin-bottom: 65px;
     }
 
     @media @mobile-widths {
@@ -32,5 +35,62 @@
       color: @pink;
       text-transform: uppercase;
       margin-bottom: 20px;
+
+      @media @desktop-widths {
+        z-index: 2;
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+
+      @media @tablet-widths {
+        z-index: 2;
+        position: absolute;
+        top: -15px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+    }
+
+    textarea {
+      border: 2px solid @border-light;
+      outline: none;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-size: 18px;
+      padding: 20px;
+
+      @media @desktop-widths {
+        width: 820px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+
+      @media @tablet-widths {
+        margin-bottom: 50px;
+        margin-top: 40px;
+        width: 80%;
+      }
+
+      @media @mobile-widths {
+        width: 100%;
+        margin-bottom: 45px;
+      }
     }
 }

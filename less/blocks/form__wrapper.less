@@ -7,16 +7,17 @@
 
   @media @desktop-widths {
     width: 940px;
+    padding-bottom: 20px;
   }
 
   @media @tablet-widths {
     width: 620px;
+    padding-bottom: 70px;
   }
 
   @media @mobile-widths {
     width: 100%;
   }
-
 
   .form-area {
     display: flex;
@@ -25,6 +26,40 @@
     flex-wrap: wrap;
     margin: 0 auto;
   }
+
+  .contest-contacts__personal-input, .contest-connect__personal-input {
+    border: 2px solid @border-light;
+
+    &:hover {
+      border: 2px solid @black;
+    }
+
+    &:focus {
+      border: 2px solid @pink;
+      outline: none;
+    }
+
+
+    &::-webkit-input-placeholder {
+      color: @blue;
+      opacity: 1;
+      font-size: 18px;
+    }
+
+    &::-moz-input-placeholder {
+      color: @blue;
+      opacity: 1;
+      font-size: 18px;
+    }
+
+    &::-o-input-placeholder {
+      color: @blue;
+      opacity: 1;
+      font-size: 18px;
+    }
+  }
+
+
 
   .form__text {
     font-size: 14px;
@@ -39,15 +74,46 @@
     color: @pink;
   }
 
+  .form__submit-wrapper {
+    order: 6;
+
+    @media @tablet-widths {
+      width: 620px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
   .form__submit {
 
+    background-color: @btn-submit;
+    color: @white;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &:hover {
+      background-color: @btn-submit-hover;
+    }
+
+    &:active {
+      color: @btn-submit-active;
+    }
+
+    &:disabled {
+      background-color: @border-light;
+    }
+
     @media @desktop-widths {
-      order: 6;
       width: 300px;
     }
 
     @media @tablet-widths {
-      order: 6;
       width: 300px;
     }
 
@@ -57,5 +123,7 @@
     }
 
   }
-
+  .form__required {
+    order: 7;
+  }
 }

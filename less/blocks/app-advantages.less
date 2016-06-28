@@ -1,7 +1,13 @@
 .app-advantages {
     background-color: @gray;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: @blue;
-    padding-top: 40px;
+
+    @media @desktop-widths {
+      margin-top: 85px;
+    }
 
     .app-advantages__wrapper {
       display: flex;
@@ -15,11 +21,15 @@
       @media @tablet-widths {
         width: 620px;
         flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        padding-top: 80px;
       }
 
       @media @mobile-widths {
         width: 280px;
         flex-direction: column;
+        padding-top: 88px;
       }
     }
 
@@ -36,6 +46,8 @@
 
       @media @mobile-widths {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
       }
 
 
@@ -45,31 +57,37 @@
 
         @media @desktop-widths {
           font-size: 30px;
+          padding-top: 60px;
         }
 
         @media @tablet-widths {
           font-size: 18px;
+          text-align: left;
         }
 
         @media @mobile-widths {
           font-size: 18px;
+          margin: 0 auto;
         }
      }
 
       .app-reasons__text {
         line-height: 24px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
 
         @media @desktop-widths {
           font-size: 18px;
+          padding-top: 35px;
         }
 
         @media @tablet-widths {
           font-size: 14px;
+          text-align: left;
         }
 
         @media @mobile-widths {
           font-size: 14px;
+          margin: 0 auto;
         }
       }
 
@@ -83,6 +101,29 @@
           display: none;
         }
       }
+
+        .app-advantages__friends {
+
+          @media @tablet-widths {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 268px;
+            height: 481px;
+          }
+
+          @media @mobile-widths {
+            position: relative;
+            width: 157px;
+            height: 320px;
+            order: 2;
+            margin: 0 auto;
+            margin-bottom: -38px;
+          }
+
+
+        }
+
 
     }
 

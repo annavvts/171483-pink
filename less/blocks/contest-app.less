@@ -12,6 +12,8 @@
       order: 2;
       border: 2px solid @border-light;
       background: @white;
+      padding: 60px 30px;
+      padding-bottom: 22px;
     }
 
     @media @mobile-widths {
@@ -20,29 +22,126 @@
       width: 100%;
       order: 0;
       background: @gray;
-      padding: 40px 20px;
+      padding: 40px 0;
     }
 
     .contest-app__wrapper {
+      position: relative;
+
+      @media @desktop-widths {
+        padding-top: 55px;
+      }
       @media @mobile-widths {
         width: 280px;
         margin: 0 auto;
       }
     }
 
+    .contest-app-line {
+
+      @media @desktop-widths {
+        padding-left: 75px;
+        margin-bottom: 35px;
+      }
+
+      @media @tablet-widths {
+        margin-bottom: 37px;
+      }
+
+      @media @mobile-widths {
+        margin-bottom: 40px;
+      }
+    }
     .contest-app__text {
+      text-align: center;
       font-size: 14px;
       line-height: 18px;
       color: @pink;
       text-transform: uppercase;
       font-weight: 400;
       margin-bottom: 35px;
+
+      @media @desktop-widths {
+        z-index: 2;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+
+      @media @tablet-widths {
+        z-index: 2;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+    }
+
+    .contest-app__select-input {
+      display: none;
     }
 
     .contest-app__select-label {
+      display: block;
+      text-align: left;
+      padding-left: 60px;
       font-size: 18px;
-      line-height: 30px;
+      line-height: 40px;
       color: @blue;
-      margin-left: 20px;
+      position: relative;
+
+      @media @desktop-widths {
+        margin-left: 20px;
+      }
+
+      @media @tablet-widths {
+        margin-left: 20px;
+      }
+
+      &:before {
+        content: "";
+        border: 2px solid @border-light;
+        border-radius: 50%;
+        background-color: @white;
+        width: 36px;
+        height: 36px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
+
+    .contest-app__select-input:checked + .contest-app__select-label:after {
+      content: "";
+      border: 1px solid @pink;
+      border-radius: 50%;
+      background-color: @pink;
+      width: 15px;
+      height: 15px;
+      display: block;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+
+    }
+
+
 }

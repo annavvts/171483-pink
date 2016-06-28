@@ -1,28 +1,260 @@
 .photo-edit {
     background: @gray;
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-
     @media @desktop-widths {
+      width: 940px;
+      margin: 0 auto;
       padding-top: 55px;
       padding-bottom: 55px;
+      padding-left: 80px;
+      padding-right: 60px;
       flex-direction: row;
-      width: 940px;
+      margin-bottom: 50px;
     }
 
     @media @tablet-widths {
       padding-top: 60px;
       padding-bottom: 60px;
       flex-direction: row;
-      width: 620px;
     }
 
     @media @mobile-widths {
       padding-top: 20px;
       padding-bottom: 20px;
       flex-direction: column;
-      width: 280px;
+    }
+
+    .photo-edit__wrapper {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      @media @mobile-widths {
+        flex-wrap: wrap;
+        width: 280px;
+      }
+      @media @tablet-widths {
+        width: 620px;
+      }
+
+      img {
+
+        @media @desktop-widths {
+          padding-right: 80px;
+        }
+
+        @media @tablet-widths {
+          padding-right: 40px;
+        }
+        @media @mobile-widths {
+          width: 100%;
+        }
+      }
+    }
+    .photo-edit__form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @media @mobile-widths {
+        display: block;
+        width: 100%;
+      }
+      input[type=range] {
+        -webkit-appearance: none;
+        width: 300px;
+        @media @tablet-widths {
+          width: 210px;
+        }
+        @media @mobile-widths {
+          display: none;
+        }
+        background: transparent;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+
+      input[type=range]:focus {
+        outline: none;
+      }
+      input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid @pink;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: @gray;
+        cursor: pointer;
+        margin-top: -7px;
+      }
+      input[type=range]:focus::-webkit-slider-thumb {
+        background: @pink;
+      }
+
+      input[type=range]::-moz-range-thumb {
+        border: 1px solid @pink;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: @gray;
+        cursor: pointer;
+      }
+      input[type=range]:focus::-moz-range-thumb {
+        background: @pink;
+      }
+
+      input[type=range]::-ms-thumb {
+        border: 1px solid @pink;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: @gray;
+        cursor: pointer;
+      }
+      input[type=range]:focus::-ms-thumb {
+        background: @pink;
+      }
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 300px;
+        height: 2px;
+        cursor: pointer;
+        background: @black;
+      }
+
+
+      input[type=range]::-moz-range-track {
+        width: 300px;
+        height: 2px;
+        cursor: pointer;
+        background: @black;
+      }
+
+      input[type=range]::-ms-track {
+        width: 300px;
+        height: 2px;
+        cursor: pointer;
+        background: transparent;
+        border-color: transparent;
+        color: transparent;
+      }
+      input[type=range]::-ms-fill-lower {
+        background: @black;
+      }
+      input[type=range]::-ms-fill-upper {
+        background: @black;
+      }
+    }
+    .photo-edit__tool {
+      width: 410px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid @btn-cancel;
+      display: flex;
+      align-items: center;
+      @media @tablet-widths {
+        width: 270px;
+      }
+      @media @mobile-widths {
+        width: 100%;
+        display: none;
+        &:first-of-type {
+          display: block;
+          input[type=range] {
+            display: block;
+          }
+        }
+      }
+      &:not(:first-of-type) {
+        padding-top: 15px;
+      }
+      svg {
+        @media @desktop-widths {
+          margin-right: 45px;
+        }
+        @media @tablet-widths {
+          width: 20px;
+          margin-right: 30px;
+        }
+        path {
+          fill: @pink;
+        }
+        rect {
+          fill: @pink;
+        }
+      }
+    }
+    .photo-edit__buttons {
+      width: 100%;
+      align-self: flex-end;
+    }
+    .photo-edit__submit {
+      background-color: transparent;
+      color: @pink;
+      font-weight: 700;
+      font-size: 18px;
+      border: 3px solid @pink;
+      outline: none;
+      border-radius: 30px;
+      padding: 17px 0;
+      width: 260px;
+
+      @media @desktop-widths {
+        width: 180px;
+        margin-right: 43px;
+      }
+
+      @media @tablet-widths {
+        width: 260px;
+      }
+
+      @media @mobile-widths {
+        width: 280px;
+      }
+
+      &:hover {
+        background-color: @pink;
+        color: @white;
+      }
+    }
+
+    .photo-edit__cancel {
+      background-color: transparent;
+      color: @btn-cancel;
+      font-weight: 700;
+      font-size: 18px;
+      border: 3px solid @btn-cancel;
+      outline: none;
+      border-radius: 30px;
+      padding: 17px 0;
+
+      @media @desktop-widths {
+        width: 180px;
+      }
+
+      @media @tablet-widths {
+        width: 260px;
+        margin-top: 23px;
+      }
+
+      @media @mobile-widths {
+        width: 280px;
+        margin-top: 10px;
+      }
+
+      &:hover {
+        border: 3px solid @btn-cancel-hover;
+        color: @btn-cancel-hover;
+      }
+
+      &:active {
+        background-color: @btn-cancel-hover;
+        color: @btn-cancel;
+      }
     }
 }
 

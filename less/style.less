@@ -10,15 +10,18 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-align: center;
   margin: 0;
   padding: 0;
   width: 100%;
+  overflow-x: hidden;
 }
 
 ul {
    padding-left: 0;
+   margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -49,6 +52,8 @@ img {
 @import "blocks/contest-connect.less";
 @import "blocks/contest-app.less";
 @import "blocks/contest-feedback.less";
+@import "blocks/pop-up-success.less";
+@import "blocks/pop-up-failure.less";
 @import "blocks/footer.less";
 @import "blocks/photo-intro.less";
 @import "blocks/photos.less";

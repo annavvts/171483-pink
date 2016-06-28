@@ -2,33 +2,46 @@
     background-color: @white;
     color: @blue;
     padding-top: 45px;
-    padding-bottom: 45px;
-
-    @media @mobile-widths {
-      margin-top: 295px;
-    }
-
 
     .app-intro__text {
       font-weight: 300;
-      padding-left: 35px;
-      padding-right: 35px;
+      margin: 0 auto;
 
       @media @desktop-widths {
         font-size: 50px;
+        max-width: 820px;
       }
 
       @media @tablet-widths {
         font-size: 40px;
+        max-width: 620px;
+        padding-bottom: 60px;
       }
 
       @media @mobile-widths {
         font-size: 24px;
+        max-width: 220px;
+        padding-bottom: 35px;
+      }
 
-        &:first-child {
+      &:first-child {
+
+        @media @mobile-widths {
           margin-bottom: 35px;
         }
       }
+
+      &:nth-child(2) {
+
+        @media @desktop-widths {
+          max-width: 530px;
+        }
+
+        @media @tablet-widths {
+          max-width: 390px;
+        }
+      }
+
     }
 
 }

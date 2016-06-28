@@ -1,12 +1,17 @@
 .contest-connect {
     background: @white;
     text-align: left;
+    position: relative;
 
     @media @desktop-widths {
+      flex-wrap: wrap;
       order: 3;
       border: 2px solid @border-light;
       margin-top: 55px;
       width: 940px;
+      padding: 0 60px;
+      padding-top: 45px;
+      display: flex;
     }
 
     @media @tablet-widths {
@@ -14,6 +19,10 @@
       border: 2px solid @border-light;
       margin-top: 55px;
       width: 620px;
+      padding: 45px 60px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
     }
 
     @media @mobile-widths {
@@ -22,33 +31,150 @@
       width: 280px;
       order: 0;
       padding-top: 40px;
-      padding-bottom: 50px;
+      padding-bottom: 23px;
     }
+    .contest-connect__personal-input-wrapper {
+      @media @desktop-widths {
+        position: relative;
+        width: 50%;
 
+        &:hover:after {
+          border-left: 2px solid @black;
+          width: 58px;
+        }
+
+        &:first-of-type {
+          padding-right: 35px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            height: 100%;
+            width: 60px;
+            background-color: @border-light;
+            background-image: url("../img/icon-phone.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &:last-of-type {
+          padding-left: 35px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: block;
+            height: 100%;
+            width: 60px;
+            background-color: @border-light;
+            background-image: url("../img/icon-mail.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      @media @tablet-widths {
+        margin-top: 38px;
+        margin-bottom: 18px;
+
+        &:hover:after {
+          border-left: 2px solid @pink;
+          width: 58px;
+        }
+
+        &:first-of-type {
+          padding-right: 35px;
+
+          &:after {
+            content: "";
+            position: absolute;
+            right: 97px;
+            top: 83px;
+            display: block;
+            height: 60px;
+            width: 60px;
+            background-color: @border-light;
+            background-image: url("../img/icon-phone.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &:last-of-type {
+          order: 3;
+
+          &:after {
+            content: "";
+            position: absolute;
+            right: 62px;
+            top: 218px;
+            display: block;
+            height: 60px;
+            width: 60px;
+            background-color: @border-light;
+            background-image: url("../img/icon-mail.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      @media @mobile-widths {
+        margin-top: 15px;
+        margin-bottom: 27px;
+      }
+    }
     .contest-connect__personal-input {
 
       @media @desktop-widths {
-        width: 373px;
+        width: 100%;
+        height: 60px;
+        padding-left: 20px;
       }
 
       @media @tablet-widths {
         width: 100%;
+        height: 60px;
+        padding-left: 20px;
       }
 
       @media @mobile-widths {
         width: 90%;
+        height: 60px;
+        padding-left: 20px;
       }
     }
 
     .contest-connect__personal-label {
       font-size: 14px;
-      line-height: 30px;
       color: @pink;
       text-transform: uppercase;
       font-weight: 400;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      margin-left: 20px;
+
+      @media @desktop-widths {
+        width: 50%;
+        line-height: 55px;
+        padding-left: 20px;
+
+        &[for=email]{
+          padding-left: 55px;
+        }
+      }
+      @media @tablet-widths {
+        padding-left: 20px;
+
+        &[for=email]{
+          order: 4;
+        }
+      }
+      @media @mobile-widths {
+        padding-left: 20px;
+      }
     }
 
     .mobile-only {
@@ -82,12 +208,25 @@
     }
 
     .contest-connect__text {
+      z-index: 2;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
       font-size: 14px;
       line-height: 18px;
       color: @pink;
       text-transform: uppercase;
       font-weight: 400;
-      text-align: center;
+      margin-bottom: 35px;
+      span {
+        position: relative;
+        z-index: 3;
+        padding: 0 5px;
+        background: @white;
+      }
 
       @media @mobile-widths {
         display: none;

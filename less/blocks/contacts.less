@@ -13,10 +13,12 @@
 
       @media @desktop-widths {
         width: 940px;
+        padding-bottom: 20px;
       }
 
       @media @tablet-widths {
         width: 620px;
+        padding-bottom: 25px;
       }
 
       @media @mobile-widths {
@@ -26,15 +28,17 @@
 
     .contacts__text {
       font-weight: 300;
+      margin: 0 auto;
       margin-bottom: 40px;
-      width: 100%;
 
       @media @desktop-widths {
+        width: 100%;
         font-size: 50px;
       }
 
       @media @tablet-widths {
         font-size: 40px;
+        width: 100%;
       }
 
       @media @mobile-widths {
@@ -64,6 +68,20 @@
       @media @mobile-widths {
         margin: 0;
       }
+
+      a {
+
+        &:hover {
+        color: @black;
+        text-decoration: underline;
+        }
+
+        &:active {
+          color: @black;
+          opacity: 0.7;
+          text-decoration: none;
+        }
+      }
     }
 
     .contacts__visit {
@@ -71,6 +89,10 @@
       @media @desktop-widths {
         width: 30%;
         order: 2;
+      }
+
+      @media @tablet-widths {
+        max-width: 230px;
       }
 
     }
@@ -86,5 +108,73 @@
       margin-bottom: 10px;
       margin-top: 30px;
       font-size: 18px;
+    }
+
+    .contacts__map {
+      position: relative;
+      background-size: 100%;
+
+      #map {
+        width: 100%;
+
+        @media @desktop-widths {
+          height: 520px;
+        }
+
+        @media @tablet-widths {
+          height: 377px;
+        }
+
+        @media @mobile-widths {
+          height: 200px;
+        }
+      }
+
+      &:before {
+        content: "";
+        background-image: url("../img/icon-map-marker.svg");
+        position: absolute;
+        left: 50%;
+      }
+      &:after {
+        content:  "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background: url("../img/bg-triangle-white-footer.svg") no-repeat top;
+        background-size: 100% 140px;
+        z-index: 2;
+
+        @media @desktop-widths {
+          top: 0;
+        }
+
+        @media @tablet-widths {
+          top: -32px;
+        }
+
+        @media @mobile-widths {
+          top: -54px;
+        }
+      }
+
+      @media @desktop-widths {
+        min-height: 520px;
+        background:  url("../img/bg-map-desktop@1x.jpg") 0 -240px;
+        // background-size: 100% 140px, cover;
+      }
+
+      @media @tablet-widths {
+        min-height: 378px;
+        background:  url("../img/bg-triangle-white-footer.svg") no-repeat top, url("../img/bg-map-tablet@1x.jpg") -7px 484px;
+      }
+
+      @media @mobile-widths {
+        min-height: 200px;
+        background:  url("../img/bg-triangle-white-footer.svg") no-repeat top, url("../img/bg-map-mobile@1x.png");
+      }
+
     }
 }

@@ -5,13 +5,16 @@
       border: 2px solid @border-light;
       background: @white;
       margin-top: 55px;
+      position: relative;
     }
 
     @media @tablet-widths {
+      width: 100%;
       order: 4;
       border: 2px solid @border-light;
       background: @white;
       margin-top: 55px;
+
     }
 
     @media @mobile-widths {
@@ -20,29 +23,139 @@
       order: 0;
       background: @gray;
       padding-top: 37px;
-      padding-bottom: 50px;
       width: 100%;
     }
 
+
+
     .contest-achievments__wrapper {
+      position: relative;
+
+      @media @desktop-widths {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 10px;
+      }
+
+      @media @tablet-widths {
+        padding: 64px 50px;
+        padding-bottom: 5px;
+      }
       @media @mobile-widths {
         width: 280px;
         margin: 0 auto;
       }
     }
 
+    .contest-achievments__select-input {
+      display: none;
+    }
+
+    .contest-achievments__select-label {
+      position: relative;
+      padding-left: 60px;
+      line-height: 39px;
+      font-size: 18px;
+      color: @blue;
+
+      @media @desktop-widths {
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 45px;
+        width: 33%;
+      }
+
+      @media @tablet-widths {
+        display: block;
+        width: 100%;
+        margin-bottom: 45px;
+        text-align: left;
+      }
+
+      @media @mobile-widths {
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+        text-align: left;
+        padding-left: 70px;
+      }
+
+      &:hover:before {
+        border: 2px solid @black;
+      }
+
+      &:focus:before {
+        border: 2px solid @pink;
+      }
+
+      &:before {
+        content: "";
+        width: 35px;
+        height: 35px;
+        border: 2px solid @border-light;
+        background-color: @white;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .contest-achievments__select-input:checked + .contest-achievments__select-label:after {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 11px;
+      width: 23px;
+      height: 10px;
+      border-left: 3px solid @pink;
+      border-bottom: 3px solid @pink;
+      transform: rotate(-45deg);
+    }
+
     .contest-achievments__text {
+      text-align: center;
       font-size: 14px;
       line-height: 18px;
       color: @pink;
       text-transform: uppercase;
       font-weight: 400;
-    }
+      margin-bottom: 35px;
 
-    .contest-achievments__select-label {
-      font-size: 18px;
-      line-height: 30px;
-      color: @blue;
-      margin-left: 30px;
+      @media @desktop-widths {
+        z-index: 2;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+
+      @media @tablet-widths {
+        z-index: 2;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        span {
+          position: relative;
+          z-index: 3;
+          padding: 0 5px;
+          background: @white;
+        }
+      }
+
     }
 }

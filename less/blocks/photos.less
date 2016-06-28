@@ -5,33 +5,61 @@
     .photos__look {
       line-height: 30px;
       color: @blue;
+      margin: 0 auto;
 
       @media @desktop-widths {
         font-size: 18px;
+        padding: 100px 0;
+        max-width: 610px;
       }
 
       @media @tablet-widths {
         font-size: 18px;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        max-width: 465px;
       }
 
       @media @mobile-widths {
         font-size: 14px;
+        padding: 55px 0;
       }
     }
 
     .panorama-descr {
+      position: relative;
       margin: 0 auto;
-
+      .photos__name {
+        @media @desktop-widths {
+          display: inline;
+        }
+      }
+      .photos__descr {
+        @media @desktop-widths {
+          margin: 0;
+          height: auto;
+        }
+      }
       @media @desktop-widths {
         width: 940px;
       }
 
       @media @tablet-widths {
         width: 620px;
+        position: relative;
       }
 
       @media @mobile-widths {
         width: 280px;
+      }
+
+      .photos__like-wrapper {
+        @media @desktop-widths {
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          width: 130px;
+        }
       }
     }
 
@@ -64,12 +92,52 @@
       font-weight: 300;
       text-transform: uppercase;
     }
+    .photos__descr {
+      height: 48px;
+      overflow: hidden;
+    }
+    .photos__like-wrapper {
+      position: relative;
+      @media @mobile-widths {
+        display: flex;
+      }
+    }
 
     .photos__like, .photos__like-count {
       font-size: 12px;
       color: @pink;
       text-transform: uppercase;
       text-decoration: none;
+      @media @mobile-widths {
+        order: 2;
+      }
+    }
+
+    .photos__like-heart {
+
+      @media @mobile-widths {
+        align-self: center;
+        margin-right: 20px;
+      }
+      &:after {
+        content: "";
+
+        display: block;
+        background-image: url("../img/icon-heart.svg");
+        background-repeat: no-repeat;
+        width: 14px;
+        height: 12px;
+        @media @desktop-widths {
+          position: absolute;
+          bottom: 7px;
+          right: 0;
+        }
+        @media @tablet-widths {
+          position: absolute;
+          bottom: 7px;
+          right: 0;
+        }
+      }
     }
 
     .photos__wrapper {
@@ -109,6 +177,37 @@
       @media @mobile-widths {
         margin-top: 25px;
         width: 100%;
+      }
+    }
+    .photos__panorama > a {
+      display: block;
+    }
+    .photos__panorama picture {
+      position: relative;
+      display: block;
+      img {
+        display: block;
+        width: 100%;
+      }
+      &:after {
+        content: "Панорама дня";
+        width: 140px;
+        background-color: @pink;
+        color: @white;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        padding: 4px 0;
+        text-transform: uppercase;
+        position: absolute;
+        @media @desktop-widths {
+          right: 130px;
+          top: 55px;
+        }
+        @media @mobile-widths {
+          top: 0;
+          right: 20px;
+        }
       }
     }
 
