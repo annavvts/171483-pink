@@ -12,7 +12,6 @@
   font-weight: lighter;
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
-/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 * {
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -108,35 +107,6 @@ img {
 }
 .page-header--opened {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-}
-.page-header-desktop {
-  background-color: rgba(29, 38, 49, 0.7);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-.page-header-desktop .page-header-desktop__wrapper {
-  margin: 0 auto;
-  width: 940px;
-  display: inline-flex;
-  justify-content: space-between;
-}
-.page-header-desktop .page-header-desktop__items {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  flex-grow: 1;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0;
-}
-.page-header-desktop .page-header-desktop__item a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.page-header-desktop img {
-  margin-right: 160px;
 }
 .app-image {
   display: flex;
@@ -1084,7 +1054,9 @@ footer .footer__copyright svg:active path {
   padding-bottom: 15px;
   border-bottom: 1px solid #dddfe0;
   display: flex;
-  align-items: center;
+}
+.photo-edit .photo-edit__tool .mobile_only {
+  display: none;
 }
 .photo-edit .photo-edit__tool:not(:first-of-type) {
   padding-top: 15px;
@@ -1171,9 +1143,6 @@ footer .footer__copyright svg:active path {
   .page-header .page-header__picture {
     bottom: -5px;
     left: 170px;
-  }
-  .page-header-desktop {
-    display: none;
   }
   .app-image .app-image__picture {
     width: 470px;
@@ -2297,9 +2266,6 @@ footer .footer__copyright svg:active path {
     bottom: 293px;
     left: 0;
   }
-  .page-header-desktop {
-    display: none;
-  }
   .app-image .app-image__picture {
     width: 258px;
     height: 286px;
@@ -2722,17 +2688,34 @@ footer .footer__copyright svg:active path {
     width: 100%;
   }
   .photo-edit .photo-edit__form input[type=range] {
+    width: 100%;
     display: none;
+  }
+  .photo-edit .photo-edit__tool .mobile_only {
+    display: inline;
+  }
+  .photo-edit .photo-edit__tool .mobile_only path,
+  .photo-edit .photo-edit__tool .mobile_only rect {
+    fill: #b5b9be;
   }
   .photo-edit .photo-edit__tool {
     width: 100%;
     display: none;
   }
   .photo-edit .photo-edit__tool:first-of-type {
-    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .photo-edit .photo-edit__tool:first-of-type input[type=range] {
     display: block;
+    margin-top: 30px;
+    width: 100%;
   }
   .photo-edit .photo-edit__submit {
     width: 280px;

@@ -12,9 +12,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.initConfig({
-    clean: {
-      build: ["build"]
-    },
     copy: {
       build: {
         files: [{
@@ -42,6 +39,9 @@ module.exports = function(grunt) {
           "build/css/style.css": ["less/style.less"]
         }
       }
+    },
+    clean: {
+      build: ["build"]
     },
     postcss: {
       style: {
