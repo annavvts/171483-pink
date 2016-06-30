@@ -1723,7 +1723,7 @@ footer .footer__copyright svg:active path {
     width: 320px;
   }
   .page-header .page-header__picture {
-    bottom: 72px;
+    bottom: 0;
     left: 345px;
   }
   .page-header .page-header__photo-text {
