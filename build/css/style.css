@@ -411,7 +411,6 @@ img {
 .contacts .contacts__map:after {
   content: "";
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 140px;
@@ -1724,7 +1723,7 @@ footer .footer__copyright svg:active path {
     width: 320px;
   }
   .page-header .page-header__picture {
-    bottom: -3px;
+    bottom: 72px;
     left: 345px;
   }
   .page-header .page-header__photo-text {
@@ -1925,7 +1924,7 @@ footer .footer__copyright svg:active path {
     height: 520px;
   }
   .contacts .contacts__map:after {
-    top: 0;
+    top: -6px;
   }
   .contacts .contacts__map {
     min-height: 520px;
@@ -2465,6 +2464,7 @@ footer .footer__copyright svg:active path {
   }
   .contacts .contacts__wrapper {
     width: 280px;
+    padding-bottom: 40px;
   }
   .contacts .contacts__text {
     font-size: 24px;
